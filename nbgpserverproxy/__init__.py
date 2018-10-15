@@ -1,4 +1,4 @@
-from nbgbsessionproxy.handlers import setup_handlers
+from nbgpserverproxy.handlers import setup_handlers
 
 # Jupyter Extension points
 def _jupyter_server_extension_paths():
