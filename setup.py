@@ -1,9 +1,9 @@
 import setuptools
 
 setuptools.setup(
-    name="nbgbserverproxy",
+    name="nbgpserverproxy",
     version='0.1.0',
-    url="https://github.com/jupyterhub/nbgbserverproxy",
+    url="https://github.com/jupyterhub/nbgpserverproxy",
     author="Ivan Chang",
     description="Jupyter extension to proxy GenePattern Server",
     packages=setuptools.find_packages(),
@@ -13,5 +13,5 @@ setuptools.setup(
         'notebook',
         'nbserverproxy >= 0.5.1'
     ],
-    package_data={'nbgbserverproxy': ['static/*']},
+    package_data={'nbgpserverproxy': ['static/*']},
 )

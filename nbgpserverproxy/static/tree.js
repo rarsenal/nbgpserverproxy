@@ -23,7 +23,7 @@ define(function(require) {
         /* create our list item */
         var gpserver_item = $('<li>')
             .attr('role', 'presentation')
-            .addClass('new-rstudio');
+            .addClass('new-gpserver');
 
         /* create our list item's link */
         var gpserver_link = $('<a>')
