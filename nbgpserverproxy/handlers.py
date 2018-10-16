@@ -38,14 +38,14 @@ class GPServerProxyHandler(SuperviseAndProxyHandler):
 
     def port(self):
         """
-        Force use port 8080
+        Force use port 8000
         """
         if 'port' not in self.state:
             #sock = socket.socket()
             #sock.bind(('', 0))
             #self.state['port'] = sock.getsockname()[1]
             #sock.close()
-            self.state['port']=8080
+            self.state['port']=8000
         return self.state['port']
 
     def get_cmd(self):
