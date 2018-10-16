@@ -50,8 +50,7 @@ class GPServerProxyHandler(SuperviseAndProxyHandler):
 
     def get_cmd(self):
         return [
-            'genepattern',
-            '-p ' + str(self.port)
+            'StartGenePatternServer'
         ]
 
 def setup_handlers(web_app):
