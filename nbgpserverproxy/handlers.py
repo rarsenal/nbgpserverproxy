@@ -36,6 +36,18 @@ class GPServerProxyHandler(SuperviseAndProxyHandler):
 
         return env
 
+    def port(self):
+        """
+        Force use port 8080
+        """
+        if 'port' not in self.state:
+            #sock = socket.socket()
+            #sock.bind(('', 0))
+            #self.state['port'] = sock.getsockname()[1]
+            #sock.close()
+            self.state['port']=8080
+        return self.state['port']
+
     def get_cmd(self):
         return [
             'genepattern',
